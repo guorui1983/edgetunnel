@@ -1,8 +1,17 @@
-name = "v20251104"
+name = "black-unit-4577"
 main = "_worker.js"
-compatibility_date = "2025-11-04"
+compatibility_date = "2026-11-10"
 keep_vars = true
+workers_dev = true
 
-#[[kv_namespaces]]
-#binding = "KV"			#KV绑定名默认不可修改
-#id = ""				#KV数据库id
+[[kv_namespaces]]
+binding = "KV"
+id = "fa166b3532b040e697a7a2b02c13c880"
+
+[[routes]]
+pattern = "vpn.flange.de5.net"
+custom_domain = true
+
+[[routes]]
+pattern = "*.flange.de5.net/*"
+zone_name = "flange.de5.net"
